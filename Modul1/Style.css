@@ -1,0 +1,13 @@
+tr,
+td {
+  text-align: center;
+  color: black;
+  background-color: goldenrod;
+  border: 1px solid black;
+}
+
+table {
+  background-color: goldenrod;
+  border: 1px solid black;
+  size: 5;
+}
