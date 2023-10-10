@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(22, 143, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+form {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  width: 50%;
+}
+
+input,
+textarea {
+  font-size: 16pt;
+  background-color: rgb(198, 193, 193);
+  /* opacity: 20%; */
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-size: 16pt;
+}

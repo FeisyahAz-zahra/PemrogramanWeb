@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODELAB 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form name="FormValidasi" onsubmit="return validateForm()">
+      <label for="nama">Nama Lengkap</label><br />
+      <input type="text" id="nama" /><br />
+      <label for="email">Email</label><br />
+      <input type="email" id="email" /><br />
+      <label for="alamat">Alamat</label><br />
+      <textarea name="alamat" id="alamat" cols="21" rows="5"></textarea><br />
+      <button
+        type="submit"
+        style="
+          font-size: 16pt;
+          color: white;
+          background-color: rgb(22, 143, 199);
+          border: none;
+          padding: 10px;
+        "
+      >
+        Daftar
+      </button>
+    </form>
+
+    <script>
+      function validateForm() {
+        var nama = document.forms["FormValidasi"]["nama"].value;
+        var email = document.forms["FormValidasi"]["email"].value;
+        var alamat = document.forms["FormValidasi"]["alamat"].value;
+        if ((nama == "") & (email == "") & (alamat == "")) {
+          alert("Anda harus mengisi data dengan benar");
+          return false;
+        }
+        if (nama == "") {
+          alert("Nama tidak boleh kosong");
+          return false;
+        }
+        if (email == "") {
+          alert("Email tidak boleh kosong");
+          return false;
+        }
+        if (alamat == "") {
+          alert("Alamat tidak boleh kosong");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
